@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* التنسيق الأساسي */
+        body {
+            font-family: 'Tahoma', Arial, sans-serif;
+            background-color: #333; /* خلفية داكنة */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            background-color: #1a1a1a; /* لون الوعاء الرئيسي */
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        /* تنسيق معلومات المباراة */
+        .match-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #444;
+        }
+
+        .teams-comparison {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .team {
+            text-align: center;
+            width: 40%;
+        }
+
+        .team img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #eee;
+            margin-bottom: 10px;
+        }
+
+        .vs {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        .match-date {
+            font-size: 18px;
+            font-weight: 300;
+            color: #ddd;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+        }
+
+        /* تنسيق الأزرار العلوية */
+        .top-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .top-buttons button {
+            flex-grow: 1;
+            padding: 12px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .lineup-btn {
+            background-color: #cccccc;
+            color: #333;
+        }
+        .lineup-btn:hover { background-color: #e0e0e0; }
+
+        .live-stream-btn {
+            background-color: #a0803c;
+            color: #fff;
+        }
+        .live-stream-btn:hover { background-color: #c0a05c; }
+
+        /* زر الإعلان */
+        .ad-button {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .ad-button button {
+            width: 100%;
+            padding: 15px;
+            background-color: #941111; /* لون أحمر بارز */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* تنسيق أزرار السيرفرات */
+        .server-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .server-buttons button {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .server-1 { background-color: #217434; color: #fff; }
+        .server-2 { background-color: #555; color: #fff; }
+        .server-3 { background-color: #888; color: #fff; }
+
+        /* تنسيق مشغل الفيديو (Placeholder) */
+        .video-player {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* نسبة العرض إلى الارتفاع لتبدو كفيديو */
+            background-color: #000;
+            border: 2px solid #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 5px;
+            /* هذا العنصر سيتم استبداله بمشغل الفيديو الفعلي (iframe, video tag, etc.) */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="match-header">
+            <div class="teams-comparison">
+                <div class="team">
+                    <img src="saudi_logo.png" alt=" ">
+                    <h2></h2>
+                </div>
+                <div class="vs">VS</div>
+                <div class="team">
+                    <img src="colombia_logo.png" alt=" ">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="match-date">
+                 سبتمبر 2025 موعد مباراة بين 
+            </div>
+        </div>
+        
+        <div class="top-buttons">
+            <button class="lineup-btn">التشكيلة | Lineup</button>
+            <button class="live-stream-btn">المكثف + البث | Live Stream</button>
+        </div>
+
+        <div class="ad-button">
+            <button>أغلق البث</button>
+        </div>
+
+        <div class="server-buttons">
+            <button class="server-3">SERV-3</button>
+            <button class="server-2">SERV-2</button>
+            <button class="server-1">SERV-1</button>
+        </div>
+
+        <div class="video-player">
+            مشغل الفيديو يظهر هنا (للبث المباشر)
+        </div>
+    </div>
+
+</body>
+</html>
